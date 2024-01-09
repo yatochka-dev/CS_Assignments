@@ -13,7 +13,7 @@ class Sixth {
     public static Scanner in = new Scanner(System.in);
 
     public static void main(String[] args) {
-        // eliminatedInFirstTour is an interger because, it will automatically round up the number of eliminated players.
+        // eliminatedInFirstTour is an integer because, it will automatically round up the number of eliminated players.
         int playerCount, eliminatedInFirstTour, eliminatedInSecondTour;
 
         System.out.print("Enter player count: ");
@@ -40,7 +40,7 @@ class Eighth {
             int tens = number / 10;
             int ones = number % 10;
 
-            // Making a 3 digit number
+            // Making a 3-digit number
             int result = Integer.parseInt("" + ones + tens + ones);
 
             System.out.println(result);
