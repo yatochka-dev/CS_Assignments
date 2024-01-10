@@ -3,18 +3,25 @@ import java.util.*;
 // I named classes after Assignment's number
 
 public class Main {
+    public static Scanner in = new Scanner(System.in);
 
     public static void main(String[] args) {
-        Sixth.main(args);
-        Eighth.main(args);
-        Ninth.main(args);
+        Sixth.main(args, in);
+        Eighth.main(args, in);
+        Ninth.main(args, in);
+
+        // Closing the scanner
+        in.close();
+
+        System.out.println("Scanner been terminated.");
     }
 }
 
 class Sixth {
-    public static Scanner in = new Scanner(System.in);
 
-    public static void main(String[] args) {
+
+
+    public static void main(String[] args, Scanner in) { // NOQA
         // eliminatedInFirstTour is an integer because, it will automatically round up the number of eliminated players.
         int playerCount, eliminatedInFirstTour, eliminatedInSecondTour;
 
@@ -32,9 +39,8 @@ class Sixth {
 }
 
 class Eighth {
-    public static Scanner in = new Scanner(System.in);
 
-    public static void main(String[] args) {
+   public static void main(String[] args, Scanner in) { // NOQA
         System.out.println("Enter a two digit number 11 - 99");
 
         int number = in.nextInt();
@@ -56,10 +62,10 @@ class Eighth {
 }
 
 class Ninth {
-    public static Scanner in = new Scanner(System.in);
 
 
-    public static void main(String[] args) {
+
+   public static void main(String[] args, Scanner in) { // NOQA
         int daysIn, years, months, weeks, daysOut, remainingDays;
 
         System.out.println("Enter amount of days: ");
