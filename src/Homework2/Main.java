@@ -1,14 +1,14 @@
-package HomeworkOne;
+package Homework2;
 
 import java.util.Scanner;
 
-public class HomeworkOne {
+public class Main {
     public static Scanner in = new Scanner(System.in);
 
     public static void main(String[] args) {
 
-        HomeworkOne.task6();
-        HomeworkOne.task11();
+        Main.task6();
+        Main.task11();
 
     }
 
