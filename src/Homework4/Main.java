@@ -14,8 +14,9 @@ public class Main {
 //        task5();
 //        task6();
 //        task7();
-        task8();
+//        task8();
 //        task9();
+        bonusTask();
 
     }
 
@@ -124,16 +125,17 @@ public class Main {
         char x;
         System.out.print("Enter a digit between 0 and 9: ");
         digit = in.next().charAt(0);
-        if (digit == 'O')
+        if (digit == '0')
             x = '9';
         else
-            x = (char) (digit - 1); // why...
+            x = (char) (digit - 1);
         System.out.println(x);
 
         // 1. If the user enters '5', the output should be '4'
         // 2. If the user enters '9', the output should be '8'
         // 3. In summary, if the user enters '0', the program sets x to '9'. Otherwise, it sets x to the character one less than the entered digit. The purpose of the program is to perform this conditional operation and output the result.
     }
+
 
     public static void task9() {
         int a, b;
@@ -147,6 +149,24 @@ public class Main {
         // 1. a=101, b=5
         // The first condition (a < b) doesn't work because a is clearly larger than b, the second condition (a < 100) doesn't work because a is clearly larger than 100. Therefore, the output should be "The expression value: false".
     }
+
+    public static void bonusTask() {
+        // Taking input for the type of animal and running time
+        System.out.print("Enter the type of animal (T for turtle, D for deer): ");
+        char animalType = in.next().charAt(0);
+        System.out.print("Enter the running time in seconds: ");
+        double runningTime = in.nextDouble();
+
+        // Checking if the captured animal is fast or not
+        if ((animalType == 'D' || animalType == 'd') && runningTime <= 10) {
+            System.out.println("Fast deer!");
+        } else if ((animalType == 'T' || animalType == 't') && runningTime <= 600) { // 10 minutes = 600 seconds
+            System.out.println("Fast turtle!");
+        } else {
+            System.out.println("Not a fast animal.");
+        }
+    }
+
 
     private static int calculate(Integer num1, Integer num2, Character operation) {
         return switch (operation) {
