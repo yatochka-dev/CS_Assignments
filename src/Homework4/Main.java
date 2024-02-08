@@ -127,7 +127,7 @@ public class Main {
         if (digit == 'O')
             x = '9';
         else
-            x = (char) (digit - 1);
+            x = (char) (digit - 1); // why...
         System.out.println(x);
 
         // 1. If the user enters '5', the output should be '4'
