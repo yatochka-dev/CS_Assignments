@@ -9,7 +9,7 @@ public class Main {
 
 
     public static void main(String[] args) {
-        task16();
+        tas12k10();
     }
 
     public static void task9() {
@@ -105,6 +105,16 @@ public class Main {
 
     }
 
+    public static void tas12k10() {
+       // for
+        int i = 1;
+        while (i <= 10) {
+
+            System.out.println(i);
+            i++;
+        }
+
+    }
 
 
 }
