@@ -7,11 +7,10 @@ public class Main {
 
     public static void main(String[] args) {
 //        System.out.println("Hello, World!");
-        task4();
+        task2();
     }
 
     private static void task1() {
-
         int n = in.nextInt();
 
         for (int x = 1; x < n; x++) {
@@ -30,11 +29,10 @@ public class Main {
         int n = in.nextInt();
         for (int i = 1; i <= n; i++) {
             String out = "";
-
             for (int j = 1; j <= i; j++) {
                 out += j + " ";
             }
-            System.out.println(out);
+            System.out.println(out+"="+" "+i*(i+1)/2);
         }
 
     }
@@ -47,8 +45,6 @@ public class Main {
             }
             System.out.println();
         }
-
-
 
 
     }
